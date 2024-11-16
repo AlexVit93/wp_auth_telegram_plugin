@@ -1,0 +1,74 @@
+/* Основные стили для страницы настроек плагина */
+.messenger-auth-settings h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стили формы */
+.messenger-auth-settings form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+/* Другие стили внутри .messenger-auth-settings */
+.messenger-auth-settings input[type="time"],
+.messenger-auth-settings input[type="text"],
+.messenger-auth-settings input[type="checkbox"] {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #005177;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    color: #0073aa;
+    font-weight: bold;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
